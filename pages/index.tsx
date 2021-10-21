@@ -34,10 +34,10 @@ const Home = () => {
     },
   ]
   const navigation = [
-    {name: "Course", link: "/course"},
-    {name: "Blog", link: "/blog"},
-    {name: "About", link: "/about"},
-    {name: "Contact", link: "/contact"},
+    {name: "COURSE", link: "/course"},
+    {name: "BLOG", link: "/blog"},
+    {name: "ABOUT", link: "/about"},
+    {name: "CONTACT", link: "/contact"},
   ]
 
 
@@ -53,12 +53,12 @@ const Home = () => {
       {/* Nav */}
       <nav className="flex justify-between h-20 z-10 sticky top-0">
         <Link href="/">
-          <a className="flex items-center pl-4">Jon Michael Gelua</a>
+          <a className="flex items-center pl-4 bg-growing-underline hover:bg-growing-underline">JON-MICHAEL GELUA</a>
         </Link>
-        <div className="flex items-center pr-4">
+        <div className="flex gap-6 items-center pr-5">
           {navigation.map((item, index) => (
             <Link href={item.link} key={index}>
-              <a className="pr-2 transition duration-200 ease-in-out hover:text-blue-800">{item.name}</a>
+              <a className="transition duration-200 ease-in-out border-b-2 border-transparent hover:border-blue-500 hover:text-blue-800">{item.name}</a>
             </Link>
           ))}
         </div>
@@ -83,7 +83,15 @@ const Home = () => {
           ))}
         </div>
       </div>
-
+      
+      {/* Projects */}
+      <div className="flex flex-col justify-center items-center">
+        <h3 className="text-3xl font-bold">RECENT PROJECTS</h3>
+        <span className="text-1">Last 12 Months</span>
+        <div>
+          
+        </div>
+      </div>
 
 
     </>
