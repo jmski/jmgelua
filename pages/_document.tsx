@@ -10,8 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <meta name="description" content="Jon-Michael Gelua Portfolio" />
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
         <link
             rel="preload"
