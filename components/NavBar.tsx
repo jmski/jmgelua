@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 const navigation = [
-  {name: "PORTFOLIO", link: "https://jmgelua.ca"}
   {name: "ABOUT", link: "#about"},
   {name: "PROJECTS", link: "#projects"},
   {name: "CONTACT", link: "#contact"},
