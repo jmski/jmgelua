@@ -19,7 +19,7 @@ const Projects = () => {
       img: "/images/fatherhoodfrenzy.png",
       views: "1.2K",
       comments: "6",
-      link: "http://fatherhood-frenzy.netlify.app",
+      link: "https://fatherhoodfrenzy.com",
     },
   ]
 

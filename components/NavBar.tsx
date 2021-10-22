@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 const navigation = [
+  {name: "PORTFOLIO", link: "https://jmgelua.ca"}
   {name: "ABOUT", link: "#about"},
   {name: "PROJECTS", link: "#projects"},
   {name: "CONTACT", link: "#contact"},
@@ -17,7 +18,7 @@ const NavBar = () => {
       <div className="hidden md:flex gap-6 items-center">
         {navigation.map((item, index) => (
           <Link href={item.link} key={index}>
-            <a className="transition duration-200 ease-in-out border-b-2 border-transparent hover:border-blue-500 hover:text-blue-800">
+            <a target="_blank" className="transition duration-200 ease-in-out border-b-2 border-transparent hover:border-blue-500 hover:text-blue-800">
               {item.name}
             </a>
           </Link>
