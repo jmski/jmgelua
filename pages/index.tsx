@@ -16,12 +16,10 @@ const Home = () => {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <NavBar/>
-      <body className="">
-        <Intro/>
-        <About/>
-        <Projects/>
-        <Contact/>
-      </body>
+      <Intro/>
+      <About/>
+      <Projects/>
+      <Contact/>
     </>
   )
 }
