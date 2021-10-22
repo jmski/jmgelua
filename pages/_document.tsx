@@ -24,7 +24,7 @@ class MyDocument extends Document {
             crossOrigin=""
           />
         </Head>
-        <body className=" bg-gray-200">
+        <body className=" bg-gray-200 overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
