@@ -34,10 +34,9 @@ const Home = () => {
   ]
 
   const navigation = [
-    {name: "COURSE", link: "/course"},
-    {name: "BLOG", link: "/blog"},
-    {name: "ABOUT", link: "/about"},
-    {name: "CONTACT", link: "/contact"},
+    {name: "ABOUT", link: "#about"},
+    {name: "PROJECTS", link: "#projects"},
+    {name: "CONTACT", link: "#contact"},
   ]
 
 
@@ -82,26 +81,28 @@ const Home = () => {
       </section>
       
 
-      {/* Skills */}
-      <section className="bg-gradient-to-r from-indigo-300 to-blue-300 transform -skew-y-6 h-96">
-        <div className="flex flex-col justify-center items-center transform skew-y-6">
-          <h3 className="text-3xl font-bold mt-20">ABOUT ME</h3>
-          <span className="text-1">"AKA" JM</span>
-          <div className="flex items-center">
-            <img className="w-36 max-w-xs mt-5" src="/images/profile_t.svg"></img>
-            <ul className="m-5">
-            <li>+ CEO of Fatherhood Frenzy</li>
-            <li>+ Self Taught developer</li>
-            <li>+ Lives in Toronto, Canada</li>
-            <li>+ Father of 2</li>
-            </ul>
+      {/* About me */}
+      <section className="h-screen">
+        <div id="about" className="bg-gradient-to-r from-indigo-300 to-blue-300 transform -skew-y-6 h-96">
+          <div className="flex flex-col justify-center items-center transform skew-y-6">
+            <h3 className="text-3xl font-bold mt-20">ABOUT ME</h3>
+            <span className="text-1">"AKA" JM</span>
+            <div className="flex items-center">
+              <img className="w-36 max-w-xs mt-5" src="/images/profile_t.svg"></img>
+              <ul className="m-5">
+              <li> + Founder of Fatherhood Frenzy</li>
+              <li> + Self Taught Developer</li>
+              <li> + Professional League of Legends Player</li>
+              <li> + Toronto, Ontario, Canada</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
 
       {/* Projects */}
-      <section className="h-screen">
+      <section id="projects" className="h-screen mb-44">
         <div className="flex flex-col justify-center items-center">
           <h3 className="text-3xl font-bold mt-20">RECENT PROJECTS</h3>
           <span className="text-1 mb-10">Last 12 Months</span>
@@ -230,6 +231,19 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Contact */}
+      <section className="h-screen">
+        <div id="contact" className="bg-gradient-to-r from-indigo-300 to-blue-300 transform skew-y-6 h-96">
+          <div className="flex flex-col justify-center items-center transform -skew-y-6">
+            <span className="text-1 mt-20">Have a project in mind?</span>
+            <h3 className="text-3xl font-bold">Let's work together</h3>
+            <div className="flex items-center">
+              <img className="w-36 max-w-xs mt-5" src="/images/profile_t.svg"></img>
+
+            </div>
+          </div>
+        </div>
+      </section>
 
     </>
   )
