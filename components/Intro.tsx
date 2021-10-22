@@ -33,15 +33,16 @@ const Intro = () => {
 
   return (
     <section className="flex flex-col justify-center items-center h-screen">
-      <h1 className=" text-7xl font-extrabold">Hi,{' '}
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800 text-8xl">
+      <img src="/images/profile.png" className="mb-2 max-w-xs md:max-w-md"/>
+      <h1 className=" text-4xl md:text-5xl lg:text-7xl font-extrabold">Hi,{' '}
+      <span className=" text-5xl md:text-6xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
         I'm Jon.
       </span></h1>
-      <h2 className="text-5xl">I'm a full stack developer.</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl">Front-end Developer</h2>
       <div className="flex gap-4 justify-between mt-4">
         {social.map((item, index) => (
           <Link key={index} href={item.link}>
-            <a target="_blank" className="p-1.5 text-5xl text-blue-500 transition duration-200 ease-in-out hover:text-blue-800">
+            <a target="_blank" className="p-1.5 text-4xl md:text-5xl text-blue-500 transition duration-200 ease-in-out hover:text-blue-800">
               {item.icon}
             </a>
           </Link>

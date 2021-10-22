@@ -7,7 +7,7 @@ const Projects = () => {
       title: "StartupFuel",
       dateStart: "May 1, 2021",
       desc: "Created a professional landing page with responsive design and animations.",
-      img: "https://picsum.photos/id/188/720/400",
+      img: "/images/pitchbox.png",
       views: "1.2K",
       comments: "6",
       link: "http://startupfuel-pitchbox.netlify.app",
@@ -16,7 +16,7 @@ const Projects = () => {
       title: "Fatherhood Frenzy",
       dateStart: "Sept 1, 2021",
       desc: "Passion project to build a community for parents looking to make income online.",
-      img: "https://picsum.photos/id/188/720/400",
+      img: "/images/fatherhoodfrenzy.png",
       views: "1.2K",
       comments: "6",
       link: "http://fatherhoodfrenzy.com",
@@ -36,7 +36,7 @@ const Projects = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img className="lg:h-72 md:h-48 w-full object-cover object-center"
                   src={project.img} alt={project.title}/>
-              <div className="p-6 hover:bg-blue-900 hover:text-white transition duration-300 ease-in">
+              <div className="p-6 hover:bg-indigo-900 hover:text-white transition duration-300 ease-in">
                 <h2 className="text-base font-medium text-indigo-400 mb-1">{project.dateStart}</h2>
                 <h1 className="text-2xl font-semibold mb-3">{project.title}</h1>
                 <p className="leading-relaxed mb-3">{project.desc}</p>
@@ -48,6 +48,7 @@ const Projects = () => {
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
+                  {/*
                   <span
                     className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                     <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none"
@@ -64,6 +65,7 @@ const Projects = () => {
                       </path>
                     </svg>{project.comments}
                   </span>
+                  */}
                 </div>
               </div>
             </div>
