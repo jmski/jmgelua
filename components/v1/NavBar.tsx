@@ -8,7 +8,7 @@ const navigation = [
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between h-20 z-10 sticky top-0 px-10 bg-gray-200">
+    <div className="flex justify-between h-20 z-10 sticky top-0 px-10 bg-gray-200">
       <Link href="/">
         <a className="flex items-center bg-growing-underline hover:bg-growing-underline hover:text-blue-500">
           JM GELUA
@@ -23,7 +23,7 @@ const NavBar = () => {
           </Link>
         ))}
       </div>
-    </nav>
+    </div>
   )
 }
 
