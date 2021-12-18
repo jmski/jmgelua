@@ -10,6 +10,9 @@ module.exports = {
       sans: ["Lexend", ...defaultTheme.fontFamily.sans],
     },
     extend: {
+      scale: {
+        "-1": "-1",
+      },
       flex: {
         2: "2",
       },
