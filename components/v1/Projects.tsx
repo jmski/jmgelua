@@ -1,38 +1,7 @@
-import Link from 'next/link';
+import React from "react";
+import { projectData } from "../../pages/api/v1/projectData";
 
 const Projects = () => {
-
-  const projectData = [
-    {
-      title: "StartupFuel",
-      dateStart: "May 1, 2021",
-      desc: "Created a professional landing page with responsive design and animations.",
-      img: "/images/pitchbox.png",
-      views: "1.2K",
-      comments: "6",
-      link: "http://startupfuel-pitchbox.netlify.app",
-    },
-    {
-      title: "Fatherhood Frenzy",
-      dateStart: "Sept 1, 2021",
-      desc: "Passion project to build a community for parents looking to make income online and encourage personal growth and development.",
-      img: "/images/fatherhoodfrenzy.png",
-      views: "1.2K",
-      comments: "6",
-      link: "https://fatherhoodfrenzy.com",
-    },
-    {
-      title: "Math Champ",
-      dateStart: "Sept 18, 2021",
-      desc: "Working with a small team to create and develop math question components as aids for teachers who teach their students online.",
-      img: "/images/mathchamp.png",
-      views: "1.2K",
-      comments: "6",
-      link: "https://mathchamp.ca/practice/67",
-    },
-    
-  ]
-
   return (
     <section id="projects" className="h-full mb-44">
       <div className="flex flex-col justify-center items-center">
@@ -44,16 +13,33 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div key={index} className="p-4 sm:w-1/2 lg:w-1/3">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              <img className="lg:h-72 md:h-48 w-full object-cover object-center"
-                  src={project.img} alt={project.title}/>
+              <img
+                className="lg:h-72 md:h-48 w-full object-cover object-center"
+                src={project.img}
+                alt={project.title}
+              />
               <div className="p-6 hover:bg-indigo-900 hover:text-white transition duration-300 ease-in">
-                <h2 className="text-base font-medium text-indigo-400 mb-1">{project.dateStart}</h2>
+                <h2 className="text-base font-medium text-indigo-400 mb-1">
+                  {project.dateStart}
+                </h2>
                 <h1 className="text-2xl font-semibold mb-3">{project.title}</h1>
                 <p className="leading-relaxed mb-3">{project.desc}</p>
                 <div className="flex items-center flex-wrap ">
-                  <a href={project.link} target="_blank" className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0 mr-2">Preview
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"
-                        fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0 mr-2"
+                  >
+                    Preview
+                    <svg
+                      className="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
@@ -83,7 +69,7 @@ const Projects = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Projects;
