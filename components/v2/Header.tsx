@@ -19,13 +19,13 @@ const Header = () => {
 
   return (
     <div
-      className="lg:h-screen flex flex-col justify-evenly item-center lg:flex-row py-16 px-8 sm:p-16 md:py-16 md:px-24"
+      className="lg:h-screen flex flex-col justify-evenly item-center lg:flex-row-reverse py-16 px-8 sm:p-16 md:py-16 md:px-24"
       id="home"
     >
-      <div className="flex-1 flex flex-col justify-center items-start mb-12 lg:mr-20 max-w-2xl">
+      <div className="flex-1 flex flex-col justify-center items-start mb-12 lg:ml-20 max-w-3xl">
         <h1 className="font-extrabold text-5xl sm:text-6xl leading-14 sm:leading-16 tracking-tighter text-transparent text-blue-200">
           i build{" "}
-          <span className="px-4 bg-gradient-to-r from-blue-500 to-teal-500 bg-growing-underline hover:text-white">
+          <span className="px-4 bg-gradient-to-r from-blue-500 to-teal-500 bg-growing-underline hover:text-white whitespace-nowrap">
             blue-tiful
           </span>{" "}
           websites
@@ -63,7 +63,7 @@ const Header = () => {
         </div>
         <div className="flex flex-row w-full mt-0 mb-4">
           <input
-            className="flex-2 w-full text-xs sm:text-xl leading-6 sm:leading-7 bg-background text-white border-2 border-background outline-0 py-2 px-2 sm:py-4 sm:px-4 rounded-tl-lg rounded-bl-lg"
+            className="flex-2 w-full text-xs sm:text-xl leading-6 sm:leading-7 bg-background lg:bg-footer text-white border-2 border-background lg:border-footer outline-0 py-2 px-2 sm:py-4 sm:px-4 rounded-tl-lg rounded-bl-lg"
             type="text"
             id="input"
             placeholder="Say something nice"
@@ -80,7 +80,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="hidden lg:flex flex-1 max-w-auto items-center">
+      <div className="hidden lg:flex flex-1 max-w-auto items-center max-w-3xl">
         <Image
           onMouseEnter={() => setToggleLogo(img2)}
           onMouseLeave={() => setToggleLogo(img1)}
