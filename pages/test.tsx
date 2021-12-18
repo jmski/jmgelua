@@ -1,6 +1,7 @@
 import NavBar from "../components/v2/NavBar";
 import Header from "../components/v2/Header";
 import Projects from "../components/v2/Projects";
+import Footer from "../components/v2/Footer";
 
 const Test = () => {
   return (
@@ -8,6 +9,7 @@ const Test = () => {
       <NavBar />
       <Header />
       <Projects />
+      <Footer />
     </div>
   );
 };
