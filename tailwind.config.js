@@ -10,6 +10,9 @@ module.exports = {
       sans: ["Lexend", ...defaultTheme.fontFamily.sans],
     },
     extend: {
+      flex: {
+        2: "2",
+      },
       lineHeight: {
         "extra-loose": "2.5",
         12: "3rem",
@@ -20,12 +23,24 @@ module.exports = {
         "8xl": "100rem",
       },
       minWidth: {
-        xxs: "16rem",
+        "4xs": "4rem",
+        "3xs": "8rem",
+        "2xs": "12rem",
+        "1xs": "16rem",
         xs: "20rem",
         sm: "24rem",
         md: "28rem",
         lg: "32rem",
         xl: "36rem",
+      },
+      colors: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        main: "var(--main)",
+        background: "var(--background)",
+        header: "var(--header)",
+        accent: "var(--accent)",
+        footer: "var(--footer)",
       },
     },
   },
