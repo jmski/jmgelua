@@ -11,10 +11,6 @@ const NavBar = () => {
       title: "Projects",
       href: "#projects",
     },
-    {
-      title: "Features",
-      href: "#features",
-    },
   ];
   const buttonText = "Contact";
 

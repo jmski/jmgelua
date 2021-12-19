@@ -35,9 +35,6 @@ const Footer = () => (
           <a href="#home">Home</a>
         </p>
         <p className="text-xs my-2 mx-0 cursor-pointer">
-          <a href="#home">About Me</a>
-        </p>
-        <p className="text-xs my-2 mx-0 cursor-pointer">
           <a href="#projects">Projects</a>
         </p>
         <p className="text-xs my-2 mx-0 cursor-pointer">
