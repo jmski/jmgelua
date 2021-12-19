@@ -8,13 +8,13 @@ const Footer = () => (
       <h1 className="text-blue-200 text-4xl leading-10 sm:text-5xl sm:leading-12 md:text-6xl md:leading-18 font-extrabold">
         Do you have a project in mind?
         <br />
-        <span className="px-4 bg-gradient-to-r from-blue-500 to-teal-500 bg-growing-underline hover:text-white cursor-pointer whitespace-nowrap">
+        <span className="px-4 bg-gradient-to-r from-blue-500 to-teal-500 bg-growing-underline hover:text-white cursor-pointer">
           <a>Let's work together</a>
         </span>
       </h1>
     </div>
 
-    <div className="text-white hover:text-teal-500 flex justify-center items-center p-4 border border-white hover:border-teal-500 ease-in-out duration-200 text-center mb-10 cursor-pointer">
+    <div className="text-white hover:text-primary flex justify-center items-center p-4 border border-white hover:border-primary ease-in-out duration-200 text-center mb-10 cursor-pointer">
       <p className=" text-sm sm:text-lg leading-5">
         <a href="mailto:geluajm@gmail.com">Connect with me</a>
       </p>

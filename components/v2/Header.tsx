@@ -30,7 +30,7 @@ const Header = () => {
           </span>{" "}
           websites
         </h1>
-        <p className="text-base leading-6 sm:text-xl sm:leading-7 text-primary">
+        <p className="text-base leading-6 sm:text-xl sm:leading-7 text-primary mt-4">
           <span className="px-1 bg-gradient-to-r from-blue-500 to-teal-500 bg-growing-underline hover:text-white">
             Jon-Michael Gelua,
           </span>{" "}

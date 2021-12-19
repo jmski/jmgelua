@@ -1,7 +1,7 @@
 import React from "react";
 
 const Article = ({ imgUrl, date, text, desc, href, github }) => (
-  <div className="w-full h-full flex flex-col bg-footer hover:bg-teal-500 ease-in-out duration-200 text-white hover:text-black">
+  <div className="w-full h-full flex flex-col bg-footer hover:bg-primary ease-in-out duration-200 text-white hover:text-black">
     <div className="w-full h-full bg-background">
       <img className="w-full h-full" src={imgUrl} alt="blog_image" />
     </div>
