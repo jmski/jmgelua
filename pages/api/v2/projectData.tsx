@@ -9,6 +9,14 @@ export const mainStoryData = {
 
 export const projectData = [
   {
+    title: "StartupFuel Website",
+    dateStart: "Dec 18, 2021",
+    img: "/images/startupfuel-lp.png",
+    href: "http://startupfuel.netlify.app/pitchbox",
+    github: "https://github.com/jmski/startupfuel-dev.git",
+    desc: "Created a professional landing page with responsive design and animations.",
+  },
+  {
     title: "PitchBox Page 2.0",
     dateStart: "Dec 8, 2021",
     img: "/images/pitchbox2.png",

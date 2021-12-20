@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import img1 from "../../public/images/jm6-logo.png";
-import img2 from "../../public/images/jm6-logo-v2.png";
+import img1 from "../../public/images/svg/jm6-logo.svg";
+import img2 from "../../public/images/svg/jm6-logo-v2.svg";
 
 const Header = () => {
   const [toggleLogo, setToggleLogo] = useState(img1);
