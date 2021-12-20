@@ -82,8 +82,8 @@ const Header = () => {
 
       <div className="hidden lg:flex flex-1 max-w-auto items-center max-w-3xl">
         <Image
-          onMouseEnter={() => setToggleLogo(img2)}
-          onMouseLeave={() => setToggleLogo(img1)}
+          onMouseEnter={() => setToggleLogo(img1)}
+          onMouseLeave={() => setToggleLogo(img2)}
           src={toggleLogo}
         />
       </div>
