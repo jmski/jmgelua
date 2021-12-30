@@ -10,7 +10,7 @@ const Projects = () => {
     >
       <div className="w-full text-left mb-20">
         <h1 className="text-blue-200 text-4xl leading-10 sm:text-5xl sm:leading-12 md:text-6xl md:leading-18 font-extrabold">
-          <span className="px-4 bg-gradient-to-r from-blue-500 to-teal-500 bg-growing-underline hover:text-white whitespace-nowrap">
+          <span className="px-4 bg-gradient-to-r from-blue-500 to-teal-500 bg-growing-underline hover:text-white">
             my recent projects.
           </span>
         </h1>
