@@ -57,7 +57,11 @@ const Home = () => {
           </div>
           <div className="hidden md:flex justify-end items-center">
             <p className="font-medium text-lg leading-6 px-4 cursor-pointer">
-              <a href={"/JonMichaelGeluaResume2022.pdf"} target="_blank">
+              <a
+                href={"/JonMichaelGeluaResume2022.pdf"}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Resume
               </a>
             </p>
@@ -95,7 +99,11 @@ const Home = () => {
                 </div>
                 <div className="md:hidden flex flex-col gap-4 justify-end items-end text-right">
                   <p className="font-medium text-xl leading-6 cursor-pointer">
-                    <a href={"/JonMichaelGeluaResume2022.pdf"} target="_blank">
+                    <a
+                      href={"/JonMichaelGeluaResume2022.pdf"}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Resume
                     </a>
                   </p>
@@ -142,22 +150,28 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="-mt-12 w-full h-screen flex justify-center items-center px-40">
-          <div className="flex flex-col">
+        <div className="-mt-12 lg:-mt-20 w-full h-screen flex justify-center items-center px-40">
+          <div className="flex flex-col gap-6">
             <span className="text-green-400">Hi, my name is</span>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-green-500 text-6xl font-extrabold">
-              JM GELUA.
+              JON-MICHAEL GELUA.
             </span>
             <span className="text-gray-400 text-6xl font-extrabold">
-              I build things for the internets.
+              I build things for the internet.
             </span>
             <div className="w-2/3">
               <span className="text-white">
                 I&apos;m a freelance web engineer specializing in building (and
                 occasionally designing) awesome digital experiences. Currently,
-                I&apos;m focused on building an idle rpg for{" "}
+                I&apos;m focused on building an idle role playing game called{" "}
                 <span className="text-green-400">
-                  <a>Fatherhood Frenzy</a>
+                  <a
+                    href="https://fatherhoodfrenzy.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Fatherhood Frenzy
+                  </a>
                 </span>
               </span>
             </div>
