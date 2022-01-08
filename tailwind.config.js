@@ -10,11 +10,17 @@ module.exports = {
       sans: ["Lexend", ...defaultTheme.fontFamily.sans],
     },
     extend: {
+      spacing: {
+        0.5: "3px",
+      },
       scale: {
         "-1": "-1",
       },
       flex: {
         2: "2",
+      },
+      fontSize: {
+        max: "10rem",
       },
       lineHeight: {
         "extra-loose": "2.5",
@@ -23,6 +29,9 @@ module.exports = {
         16: "4rem",
         18: "4.5rem",
         20: "5rem",
+      },
+      width: {
+        "1px": "1px",
       },
       maxWidth: {
         "8xl": "100rem",

@@ -1,6 +1,6 @@
 import React from "react";
-import { mainStoryData, projectData } from "../../pages/api/v2/projectData";
-import Article from "../Article";
+import { projectData } from "../../pages/api/v2/projectData";
+import Article from "./Article";
 
 const Projects = () => {
   return (
