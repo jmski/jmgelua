@@ -7,7 +7,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Lexend", ...defaultTheme.fontFamily.sans],
+      sans: ["Calibre", ...defaultTheme.fontFamily.sans],
+      mono: ["SFMono", ...defaultTheme.fontFamily.mono],
+      serif: ["Lexend", ...defaultTheme.fontFamily.serif],
     },
     extend: {
       spacing: {
@@ -30,11 +32,15 @@ module.exports = {
         18: "4.5rem",
         20: "5rem",
       },
+      height: {
+        "1px": "1px",
+      },
       width: {
         "1px": "1px",
       },
       maxWidth: {
         "8xl": "100rem",
+        60: "15rem",
       },
       minWidth: {
         "4xs": "4rem",
