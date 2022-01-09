@@ -19,13 +19,13 @@ html {
   scrollbar-width: thin;
   scrollbar-color: rgba(73, 86, 112, 1) rgba(15, 23, 42, 1);
 }
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 12px;
 }
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: rgba(15, 23, 42, 1);
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: rgba(73, 86, 112, 1);
   border: 3px solid rgba(15, 23, 42, 1);
   border-radius: 10px;
@@ -76,6 +76,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @layer utilities {
+  .scrollDirection {
+    direction: ltr;
+  }
+
   /* underline horizontal */
   .hover-underline-animation {
     display: inline-block;
@@ -111,6 +115,35 @@ body::-webkit-scrollbar-thumb {
   }
   .bg-growing-underline:focus {
     background-size: 100% 100%;
+  }
+
+  /* mobile menu animation */
+  .scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
 
   /* background radial gradient */

@@ -25,7 +25,7 @@ const NavBar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="bg-slate-900 sticky top-0 text-slate-300 px-12 py-4 z-10">
+    <div className="bg-slate-900 sticky top-0 text-slate-300 px-12 py-4 z-50">
       <div className="flex justify-between items-center">
         <div className="w-20">
           <Link href="/">

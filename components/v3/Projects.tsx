@@ -1,5 +1,6 @@
 import React from "react";
 import Article from "../v3/Article";
+import { projectData } from "../../pages/api/v3/projectData";
 
 const Projects = () => {
   return (
@@ -16,14 +17,18 @@ const Projects = () => {
           <span className="text-teal-500 font-mono">in the past year</span>
         </div>
         <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 mt-12">
-          <Article />
-          <Article />
-          <Article />
-          <Article />
-          <Article />
-          <Article />
-          <Article />
-          <Article />
+          {projectData.map((project, index) => (
+            <Article
+              key={index}
+              title={project.title}
+              dateStart={project.dateStart}
+              desc={project.desc}
+              img={project.img}
+              href={project.href}
+              github={project.github}
+              techs={project.techs}
+            />
+          ))}
         </div>
       </div>
     </div>

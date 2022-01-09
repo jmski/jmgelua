@@ -10,10 +10,10 @@ const Footer = () => (
   >
     <div className="w-full flex flex-col justify-center items-center">
       <div className="w-full text-center mb-12 font-mono">
-        <h1 className="text-slate-300 text-2xl xs:leading-10 sm:text-5xl sm:leading-12 md:text-6xl md:leading-18 font-bold">
+        <h1 className="text-slate-300 text-2xl sm:text-5xl md:text-6xl font-bold">
           <span className="text-slate-300 text-xl mobile:text-3xl font-bold">
-            <span className="text-teal-500 font-mono">4.</span> Do you have a
-            project in mind?
+            <span className="text-teal-500">4.</span> Do you have a project in
+            mind?
           </span>
           <br />
           <span className="font-sans text-teal-500 text-2xl mobile:text-5xl hover-underline-animation cursor-pointer">
@@ -32,7 +32,11 @@ const Footer = () => (
         <div className="mt-4 mx-0 sm:m-4 w-64 flex flex-col gap-4">
           <Link href="/">
             <a>
-              <img src={"/images/svg/logo.svg"} />
+              <img
+                className="w-20"
+                alt={"JMG Logo"}
+                src={"/images/svg/logo.svg"}
+              />
             </a>
           </Link>
           <p>
@@ -61,17 +65,29 @@ const Footer = () => (
             Social
           </h4>
           <p className="text-xs my-2 mx-0 cursor-pointer">
-            <a href="https://github.com/jmski" target="_blank">
+            <a
+              href={"https://github.com/jmski"}
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
               Github
             </a>
           </p>
           <p className="text-xs my-2 mx-0 cursor-pointer">
-            <a href="https://linkedin.com/in/jmgelua" target="_blank">
+            <a
+              href={"https://linkedin.com/in/jmgelua"}
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
               LinkedIn
             </a>
           </p>
           <p className="text-xs my-2 mx-0 cursor-pointer">
-            <a href="https://leetcode.com/jmgelua" target="_blank">
+            <a
+              href={"https://leetcode.com/jmgelua"}
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
               Leetcode
             </a>
           </p>

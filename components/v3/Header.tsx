@@ -20,10 +20,10 @@ const Header = () => {
             </span>
           </span>
           <span className="text-slate-400 text-2xl mobile:text-4xl xs:text-5xl sm:text-6xl md:text-7xl xl:text-8xl xs:leading-14 sm:leading-16 tracking-tighter font-bold">
-            I build things for the internet
+            I build things on the internet
           </span>
           <div className="lg:w-1/2">
-            <span className="text-white font-mono text-xs mobile:text-base xs:text-lg">
+            <span className="text-slate-500 hover:text-slate-300 ease-in-out duration-200 font-mono text-xs mobile:text-base xs:text-lg">
               I&apos;m a freelance web engineer specializing in building (and
               occasionally designing) awesome digital experiences. Currently,
               I&apos;m focused on building an idle role playing game called{" "}
