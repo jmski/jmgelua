@@ -11,7 +11,7 @@ const Projects = () => {
         Other Noteworthy Projects
       </span>
       <span className="text-teal-500 font-mono">in the past year</span>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12">
         <Article />
         <Article />
         <Article />

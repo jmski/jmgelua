@@ -3,17 +3,7 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 import featureData from "../../pages/api/v3/featureData";
 import styled from "styled-components";
 
-export const StyledProjectsGrid = styled.ul`
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  a {
-    position: relative;
-    z-index: 1;
-  }
-`;
-
-export const StyledProject = styled.li`
+export const StyledProject = styled.div`
   position: relative;
   display: grid;
   grid-gap: 10px;
@@ -221,78 +211,77 @@ export const StyledProject = styled.li`
 
 const Feature = () => {
   return (
-    <StyledProjectsGrid>
-      <div
-        id="feature"
-        className="px-12 mt-0 sm:px-16 sm:mt-8 md:px-28 w-full h-screen"
-      >
-        <div className="flex gap-4">
-          <div className="flex justify-start items-center gap-4 text-3xl w-full mb-8">
-            <span className="text-teal-500 font-mono">2.</span>{" "}
-            <span className="text-slate-300 font-bold whitespace-nowrap">
-              Some Things I&apos;ve Built
-            </span>
-            <div className="bg-slate-700 w-full max-w-60 h-1px"> </div>
-          </div>
+    <div id="feature" className="px-20 mx-auto w-full max-w-7xl h-screen">
+      <div className="flex gap-4">
+        <div className="flex justify-start items-center gap-4 text-xl sm:text-3xl w-full mb-8">
+          <span className="text-teal-500 font-mono">2.</span>{" "}
+          <span className="text-slate-300 font-bold whitespace-nowrap">
+            Some Things I&apos;ve Built
+          </span>
+          <div className="bg-slate-700 w-full max-w-60 h-1px"> </div>
         </div>
-        {featureData.map((feature, index) => (
-          <StyledProject key={index}>
-            <div className="project-content">
-              <div>
-                <span className="font-mono text-teal-500 text-md project-overline">
-                  Featured Project
-                </span>
+      </div>
+      {featureData.map((feature, index) => (
+        <StyledProject key={index}>
+          <div className="project-content">
+            <div>
+              <span className="font-mono text-teal-500 text-md project-overline">
+                Featured Project
+              </span>
 
-                <h3 className="text-slate-300 font-bold hover:text-teal-500 ease-in-out duration-200 project-title">
-                  <a href={feature.preview} target={"_blank"}>
-                    {feature.title}
-                  </a>
-                </h3>
+              <h3 className="text-slate-300 font-bold hover:text-teal-500 ease-in-out duration-200 project-title">
+                <a href={feature.preview} target={"_blank"} rel={"noreferrer"}>
+                  {feature.title}
+                </a>
+              </h3>
 
-                <div
-                  className="text-slate-300 bg-slate-700 md:rounded-md project-description"
-                  dangerouslySetInnerHTML={{ __html: feature.desc }}
-                />
+              <div
+                className="text-slate-300 bg-slate-700 md:rounded-md project-description"
+                dangerouslySetInnerHTML={{ __html: feature.desc }}
+              />
 
-                <ul className="font-mono text-slate-300 md:text-slate-500 project-tech-list">
-                  {featureData[index].tech.map((tech, i) => (
-                    <li key={i}>{tech}</li>
-                  ))}
-                </ul>
+              <ul className="font-mono text-slate-300 md:text-slate-500 project-tech-list">
+                {featureData[index].tech.map((tech, i) => (
+                  <li key={i}>{tech}</li>
+                ))}
+              </ul>
 
-                <div className="text-slate-300 md:text-slate-500 project-links">
-                  <a
-                    href={feature.github}
-                    aria-label="Github Link"
-                    className="ease-in-out duration-200 hover:-translate-y-0.5"
-                  >
-                    <span className=" hover:text-teal-500 ease-in-out duration-200">
-                      <FiGithub size={27} />
-                    </span>
-                  </a>
+              <div className="text-slate-300 md:text-slate-500 project-links">
+                <a
+                  href={feature.github}
+                  aria-label="Github Link"
+                  className="ease-in-out duration-200 hover:-translate-y-0.5"
+                >
+                  <span className=" hover:text-teal-500 ease-in-out duration-200">
+                    <FiGithub size={27} />
+                  </span>
+                </a>
 
-                  <a
-                    href={feature.preview}
-                    aria-label="External Link"
-                    className="ease-in-out duration-200 hover:-translate-y-0.5"
-                  >
-                    <span className=" hover:text-teal-500 ease-in-out duration-200">
-                      <FiExternalLink size={27} />
-                    </span>
-                  </a>
-                </div>
+                <a
+                  href={feature.preview}
+                  aria-label="External Link"
+                  className="ease-in-out duration-200 hover:-translate-y-0.5"
+                >
+                  <span className=" hover:text-teal-500 ease-in-out duration-200">
+                    <FiExternalLink size={27} />
+                  </span>
+                </a>
               </div>
             </div>
+          </div>
 
-            <div className="bg-blue-300 before:filter-none hover:outline-0 hover:bg-transparent rounded-md project-image">
-              <a>
-                <img src={feature.src} className="md:rounded-md img" />
-              </a>
-            </div>
-          </StyledProject>
-        ))}
-      </div>
-    </StyledProjectsGrid>
+          <div className="bg-blue-300 before:filter-none hover:outline-0 hover:bg-transparent rounded-md project-image">
+            <a>
+              <img
+                src={feature.src}
+                className="md:rounded-md img"
+                alt={feature.title}
+              />
+            </a>
+          </div>
+        </StyledProject>
+      ))}
+    </div>
   );
 };
 
