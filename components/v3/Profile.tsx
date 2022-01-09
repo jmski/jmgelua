@@ -13,19 +13,17 @@ const Profile = () => {
   return (
     <div
       id="about"
-      className="px-12 mt-0 sm:px-16 sm:mt-8 md:px-28 w-full h-screen"
+      className="px-4 mobile:px-12 my-20 sm:px-20 sm:my-32 md:px-28 md:-mt-12 lg:-mt-20 lg:px-40 w-full"
     >
-      <div className="flex gap-4">
-        <div className="flex justify-start items-center gap-4 text-3xl w-full mb-8">
-          <span className="text-teal-500 font-mono">1.</span>{" "}
-          <span className="text-slate-300 font-bold whitespace-nowrap">
-            About Me
+      <div className="flex flex-col gap-4">
+        <div className="flex justify-start items-center gap-4 text-sm mobile:text-xl xs:text-2xl sm:text-3xl w-full mb-8">
+          <span className="text-slate-300 text-xl mobile:text-3xl font-bold">
+            <span className="text-teal-500 font-mono">1.</span> About Me
           </span>
-          <div className="bg-slate-700 w-full max-w-60 h-1px"> </div>
         </div>
       </div>
-      <div className="grid  grid-cols-1 md:grid-cols-2">
-        <div className="text-slate-500 flex flex-col gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="text-slate-500 flex flex-col gap-4 text-xs mobile:text-base xs:text-lg">
           <p className="hover:text-slate-300 ease-in-out duration-200">
             Hello! My name is Jon and I enjoy making things come to life on the
             internet. My coding journey started back in 2000 when I decided to
@@ -71,7 +69,7 @@ const Profile = () => {
             ))}
           </ul>
         </div>
-        <div className="flex justify-center items-center border-2 border-teal-500 rounded-md mx-12">
+        <div className="flex justify-center items-center border-2 border-teal-500 rounded-md mx-12 my-12 lg:mt-0">
           <h1>Image here</h1>
         </div>
       </div>

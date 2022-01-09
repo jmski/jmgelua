@@ -1,19 +1,38 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  mode: "jit",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      mobile: "330px",
+      xs: "475px",
+      ...defaultTheme.screens,
+    },
+
     fontFamily: {
       sans: ["Calibre", ...defaultTheme.fontFamily.sans],
       mono: ["SFMono", ...defaultTheme.fontFamily.mono],
       serif: ["Lexend", ...defaultTheme.fontFamily.serif],
     },
     extend: {
-      alignText: {
-        end: "text-end",
+      gridColumn: {
+        "span-5--1": "5 / -1",
+        "span-6--1": "6 / -1",
+        "span-7--1": "7 / -1",
+
+        "span-1-5": "1 / 5",
+        "span-1-6": "1 / 6",
+        "span-1-7": "1 / 7",
+        "span-1-8": "1 / 8",
+        "span-1-9": "1 / 9",
+      },
+      grayscale: {
+        50: "50%",
+        75: "75%",
       },
       spacing: {
         0.5: "3px",
@@ -68,6 +87,21 @@ module.exports = {
     },
   },
   variants: {
+    backgroundImage: ["hover", "focus"],
+    fontFamily: ["hover", "focus"],
+    alignContent: ["odd", "even"],
+    alignItems: ["odd", "even"],
+    alignSelf: ["odd", "even"],
+    textAlign: ["odd", "even"],
+    flexDirection: ["odd", "even"],
+    gridColumn: ["odd", "even"],
+    gridColumnStart: ["odd", "even"],
+    textAlign: ["odd", "even"],
+    padding: ["odd", "even"],
+    margin: ["odd", "even"],
+    justifyContent: ["odd", "even"],
+    justifyItems: ["odd", "even"],
+    justifySelf: ["odd", "even"],
     extend: {
       backgroundImage: ["hover", "focus"],
       fontFamily: ["hover", "focus"],
@@ -76,6 +110,14 @@ module.exports = {
       alignSelf: ["odd", "even"],
       textAlign: ["odd", "even"],
       flexDirection: ["odd", "even"],
+      gridColumn: ["odd", "even"],
+      gridColumnStart: ["odd", "even"],
+      textAlign: ["odd", "even"],
+      padding: ["odd", "even"],
+      margin: ["odd", "even"],
+      justifyContent: ["odd", "even"],
+      justifyItems: ["odd", "even"],
+      justifySelf: ["odd", "even"],
     },
   },
   options: {
