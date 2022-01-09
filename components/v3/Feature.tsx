@@ -223,7 +223,7 @@ const Feature = () => {
   return (
     <StyledProjectsGrid>
       <div
-        id="about"
+        id="feature"
         className="px-12 mt-0 sm:px-16 sm:mt-8 md:px-28 w-full h-screen"
       >
         <div className="flex gap-4">

@@ -46,8 +46,8 @@ const Profile = () => {
             digital experiences for my clients.
           </p>
           <p className="hover:text-slate-300 ease-in-out duration-200">
-            I also recently started working on a passion project called
-            <span className="text-teal-500 hover-underline-animation">
+            I also recently started working on a passion project called{" "}
+            <span className="text-teal-500 hover-underline-animation scale-up-center">
               <a
                 href="https://fatherhoodfrenzy.com"
                 target={"_blank"}

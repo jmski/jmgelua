@@ -9,8 +9,9 @@ const Footer = () => (
     className="flex flex-col justify-center items-center py-16 px-8 sm:p-16 md:py-16 md:px-24"
   >
     <div className="w-full text-center mb-12 font-mono">
-      <h1 className="text-slate-300 text-4xl leading-10 sm:text-5xl sm:leading-12 md:text-6xl md:leading-18 font-bold">
-        Do you have a project in mind?
+      <h1 className="text-slate-300 text-2xl leading-10 sm:text-5xl sm:leading-12 md:text-6xl md:leading-18 font-bold">
+        <span className="text-teal-500 font-mono">4.</span> Do you have a
+        project in mind?
         <br />
         <span className="font-sans text-teal-500 hover-underline-animation cursor-pointer">
           <a>Let's work together</a>
