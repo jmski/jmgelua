@@ -41,21 +41,29 @@ const Profile = () => {
           </p>
           <p className="hover:text-slate-300 ease-in-out duration-200">
             Fast-forward to today, I&apos;ve worked with start-ups as a
-            freelance developer. My main focus these days is find opportunities
-            where I can build accessible, inclusive products and digital
-            experiences
+            freelance developer. My main focus these days are to find
+            opportunities where I can build accessible, inclusive products and
+            digital experiences for my clients.
           </p>
           <p className="hover:text-slate-300 ease-in-out duration-200">
             I also recently started working on a passion project called
-            Fatherhood Frenzy. To learn more about this click <a>here</a>
+            <span className="text-teal-500 hover-underline-animation">
+              <a
+                href="https://fatherhoodfrenzy.com"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                Fatherhood Frenzy
+              </a>
+            </span>
           </p>
           <span className="hover:text-slate-300 ease-in-out duration-200">
             Here are a few technologies I&apos;ve been working with recently:
           </span>
           <ul className="grid grid-cols-2 gap-4">
             {techList.map((tech, index) => (
-              <li key={index} className="flex">
-                <IoTriangleOutline color="#14b8a6" size="23" />
+              <li key={index} className="flex items-center">
+                <IoTriangleOutline color="#14b8a6" size="10" />
                 <span className="pl-4 hover:text-slate-300 ease-in-out duration-200">
                   {tech}
                 </span>

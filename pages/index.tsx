@@ -1,4 +1,5 @@
 import React from "react";
+import Feature from "../components/v3/Feature";
 import Footer from "../components/v3/Footer";
 import Header from "../components/v3/Header";
 import NavBar from "../components/v3/NavBar";
@@ -14,6 +15,7 @@ const Home = () => {
       <SideEmail />
       <Header />
       <Profile />
+      <Feature />
       <Footer />
     </div>
   );

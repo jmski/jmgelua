@@ -12,6 +12,9 @@ module.exports = {
       serif: ["Lexend", ...defaultTheme.fontFamily.serif],
     },
     extend: {
+      alignText: {
+        end: "text-end",
+      },
       spacing: {
         0.5: "3px",
       },
@@ -68,6 +71,11 @@ module.exports = {
     extend: {
       backgroundImage: ["hover", "focus"],
       fontFamily: ["hover", "focus"],
+      alignContent: ["odd", "even"],
+      alignItems: ["odd", "even"],
+      alignSelf: ["odd", "even"],
+      textAlign: ["odd", "even"],
+      flexDirection: ["odd", "even"],
     },
   },
   options: {

@@ -9,8 +9,8 @@ const NavBar = () => {
       href: "#about",
     },
     {
-      title: "Experience",
-      href: "#experience",
+      title: "Feature",
+      href: "#feature",
     },
     {
       title: "Work",
