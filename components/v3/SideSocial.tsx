@@ -27,12 +27,12 @@ const SideSocial = () => {
   ];
 
   return (
-    <div className="fixed bottom-0 pl-10">
+    <div className="fixed bottom-0 pl-10 z-10">
       <div className="hidden md:flex flex-col justify-center items-center gap-8">
         {socialMedia.map((element, index) => (
           <span
             key={index}
-            className="text-slate-500 hover:text-teal-500 text-2xl transform ease-in-out duration-200 hover:-translate-y-0.5"
+            className="text-slate-500 hover:text-pink-500 text-2xl transform ease-in-out duration-200 hover:-translate-y-0.5"
           >
             <a href={element.href} target={"_blank"} rel={"noreferrer"}>
               {element.icon}

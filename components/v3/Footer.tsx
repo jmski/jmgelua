@@ -16,13 +16,13 @@ const Footer = () => (
             mind?
           </span>
           <br />
-          <span className="font-sans text-teal-500 text-2xl mobile:text-5xl cursor-pointer">
+          <span className="font-sans text-teal-500 hover:text-pink-500 ease-in-out duration-200 text-2xl mobile:text-5xl cursor-pointer">
             <a>Let's work together</a>
           </span>
         </h1>
       </div>
 
-      <div className="font-mono text-teal-500 hover:text-slate-300 flex justify-center items-center p-4 border-2 rounded-md border-teal-500 hover:border-slate-300 ease-in-out duration-200 text-center mb-10 cursor-pointer">
+      <div className="font-mono text-teal-500 hover:text-pink-500 flex justify-center items-center p-4 border-2 rounded-md border-teal-500 hover:border-pink-500 ease-in-out duration-200 text-center mb-10 cursor-pointer">
         <p className=" text-sm sm:text-lg leading-5">
           <a href="mailto:geluajm@gmail.com">Connect with me</a>
         </p>

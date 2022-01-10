@@ -13,7 +13,7 @@ interface ArticleProps {
 
 const Article = ({ title, href, github, desc, techs }: ArticleProps) => {
   return (
-    <div className="bg-slate-800 p-4 transform ease-in-out duration-200 hover:-translate-y-1">
+    <div className="group bg-slate-800 p-4 transform ease-in-out duration-200 hover:-translate-y-1">
       <div className="flex flex-row justify-between items-center">
         <FiFolder size={40} color="#14b8a6" />
         <div className="flex gap-4 text-slate-500">
@@ -30,8 +30,10 @@ const Article = ({ title, href, github, desc, techs }: ArticleProps) => {
         </div>
       </div>
       <div className="mt-4 flex flex-col gap-4">
-        <span className="text-slate-300 text-xl text-left">{title}</span>
-        <p className="text-slate-300 flex flex-wrap">{desc}</p>
+        <span className="text-slate-300 group-hover:text-pink-500 text-xl text-left">
+          {title}
+        </span>
+        <p className="text-slate-500 flex flex-wrap">{desc}</p>
         <ul className="text-slate-500 flex flex-wrap gap-4">
           <li>{techs}</li>
         </ul>

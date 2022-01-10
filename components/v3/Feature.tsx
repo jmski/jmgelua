@@ -26,7 +26,7 @@ const Feature = () => {
                   Featured Project
                 </span>
 
-                <h3 className="text-slate-300 font-bold group-hover:text-teal-500 ease-in-out duration-200 text-xl mobile:text-2xl md:mb-5">
+                <h3 className="text-slate-300 font-bold group-hover:text-pink-500 ease-in-out duration-200 text-xl mobile:text-2xl md:mb-5">
                   <a
                     href={feature.preview}
                     target={"_blank"}
@@ -53,7 +53,7 @@ const Feature = () => {
                   <a
                     href={feature.github}
                     aria-label="Github Link"
-                    className="ease-in-out duration-200 hover:-translate-y-0.5  p-3"
+                    className="ease-in-out duration-200 hover:-translate-y-0.5 p-3"
                   >
                     <span className=" hover:text-teal-500 ease-in-out duration-200">
                       <FiGithub size={27} />

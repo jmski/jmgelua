@@ -16,7 +16,6 @@ export const projectData: ProjectDataProps[] = [
     href: "http://startupfuel.netlify.app/pitchbox",
     github: "https://github.com/jmski/startupfuel-dev.git",
     desc: "Created a professional landing page with responsive design and animations.",
-    techs: ["stuff", "hot", "boy"],
   },
   {
     title: "Portfolio V2",

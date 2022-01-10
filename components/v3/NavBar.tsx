@@ -39,7 +39,7 @@ const NavBar = () => {
             {navLinks.map((element, index) => (
               <li key={index}>
                 <a href={element.href}>
-                  <span className="text-slate-300 hover:text-teal-500 ease-in-out duration-200 hover-underline-animation">
+                  <span className="text-slate-300 hover:text-pink-500 ease-in-out duration-200 hover-underline-animation">
                     {element.title}
                   </span>
                 </a>
@@ -52,7 +52,7 @@ const NavBar = () => {
             rel={"noreferrer"}
           >
             <button
-              className="text-teal-500 font-medium hover:text-slate-300 ease-in-out duration-200 py-2 px-4 ml-12 rounded-md leading-6 border-2 border-teal-500 hover:border-slate-300 outline-0"
+              className="text-teal-500 font-medium hover:text-pink-500 ease-in-out duration-200 py-2 px-4 ml-12 rounded-md leading-6 border-2 border-teal-500 hover:border-pink-500 outline-0"
               type="button"
             >
               Resume
@@ -60,11 +60,21 @@ const NavBar = () => {
           </a>
         </div>
         {/** Mobile Menu */}
-        <div className="md:hidden ml-4 relative">
+        <div className="md:hidden ml-4 relative ">
           {menuOpen ? (
-            <RiCloseLine color="#14b8a6" size={30} onClick={toggleMenu} />
+            <RiCloseLine
+              className="scale-up-center"
+              color="#14b8a6"
+              size={30}
+              onClick={toggleMenu}
+            />
           ) : (
-            <RiMenu3Line color="#14b8a6" size={30} onClick={toggleMenu} />
+            <RiMenu3Line
+              className="scale-up-center"
+              color="#14b8a6"
+              size={30}
+              onClick={toggleMenu}
+            />
           )}
           {menuOpen && (
             <div className="bg-slate-900 text-right p-8 absolute right-0 top-10 min-w-2xs gap-4 rounded-md shadow-sm scale-up-center">
@@ -72,7 +82,7 @@ const NavBar = () => {
                 {navLinks.map((element, index) => (
                   <li key={index}>
                     <a href={element.href}>
-                      <span className="text-slate-300 hover:text-teal-500 ease-in-out duration-200">
+                      <span className="text-slate-300 hover:text-pink-500 ease-in-out duration-200">
                         {element.title}
                       </span>
                     </a>
@@ -85,7 +95,7 @@ const NavBar = () => {
                 rel={"noreferrer"}
               >
                 <button
-                  className="font-medium text-teal-500 hover:text-slate-300 ease-in-out duration-200 py-2 px-4 ml-12 rounded-md leading-6 border-2 border-teal-500 hover:border-slate-300 outline-0"
+                  className="font-medium text-teal-500 hover:text-pink-500 ease-in-out duration-200 py-2 px-4 ml-12 rounded-md leading-6 border-2 border-teal-500 hover:border-pink-500 outline-0"
                   type="button"
                 >
                   Resume

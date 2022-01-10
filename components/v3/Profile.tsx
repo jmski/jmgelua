@@ -27,7 +27,7 @@ const Profile = () => {
           <div className="h-64 overflow-auto scrollbar pr-12 flex flex-col gap-4">
             <p className="hover:text-slate-300 ease-in-out duration-200">
               Hello! My name is Jon and I enjoy making things come to{" "}
-              <span className="text-teal-500 hover:text-slate-300 hover-underline-animation">
+              <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
                 life on the internet.
               </span>
             </p>
@@ -36,7 +36,7 @@ const Profile = () => {
               build an online profile for myself in order to impress a girl—{" "}
               <span className="italic">
                 Mind you this was before Facebook was a thing lol!{" "}
-                <span className="text-teal-500 hover:text-slate-300 hover-underline-animation">
+                <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
                   #boomer
                 </span>
               </span>
@@ -47,10 +47,10 @@ const Profile = () => {
             </p>
             <p className="hover:text-slate-300 ease-in-out duration-200">
               Fast-forward to today, I&apos;m a{" "}
-              <span className="text-teal-500 hover:text-slate-300 hover-underline-animation">
+              <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
                 stay-at-home dad
               </span>{" "}
-              <span className="text-teal-500 hover:text-slate-300 hover-underline-animation">
+              <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
                 living the dream
               </span>{" "}
               as a freelance developer.
@@ -64,7 +64,7 @@ const Profile = () => {
           </div>
           <p className="text-slate-300 ease-in-out duration-200">
             I recently started working on a passion project called{" "}
-            <span className="text-teal-500 hover:text-slate-300 hover-underline-animation">
+            <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
               <a
                 href="https://fatherhoodfrenzy.com"
                 target={"_blank"}
@@ -82,15 +82,26 @@ const Profile = () => {
             {techList.map((tech, index) => (
               <li key={index} className="flex items-center gap-4">
                 <IoTriangleOutline color="#14b8a6" size="10" />
-                <span className=" text-teal-500 hover:text-slate-300 ease-in-out duration-200 hover-underline-animation">
+                <span className=" text-teal-500 hover:text-pink-500 ease-in-out duration-200 hover-underline-animation">
                   {tech}
                 </span>
               </li>
             ))}
           </ul>
         </div>
-        <div className="flex justify-center items-center mx-12 my-12 lg:mt-0">
-          <img src={"/images/profile.png"} alt={"Profile Picture"} />
+        <div className="flex justify-center lg:py-20 mt-20 lg:-mt-20">
+          <video
+            className="rounded-full mix-blend-screen grayscale hover:filter-none brightness-50 ease-in-out duration-200"
+            loop
+            autoPlay
+            muted
+          >
+            <source
+              src={"/videos/jmg-profile-butter-dance.mp4"}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>

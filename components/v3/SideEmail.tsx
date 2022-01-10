@@ -2,7 +2,7 @@ import React from "react";
 
 const SideEmail = () => {
   return (
-    <div className="fixed bottom-0 right-0 -mr-10">
+    <div className="fixed bottom-0 right-0 -mr-10 z-10">
       <div className="hidden md:flex flex-col justify-center items-center gap-20">
         <div className="transition ease-in-out duration-100 rotate-90 transform hover:-translate-y-1">
           <a
