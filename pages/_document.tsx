@@ -11,11 +11,14 @@ class MyDocument extends Document {
       <Html>
         <title>JM Gelua Portfolio</title>
         <meta name="description" content="Jon-Michael Gelua Portfolio" />
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+        />
         <Head>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body className=" bg-gray-200 overflow-x-hidden">
+        <body>
           <Main />
           <NextScript />
         </body>

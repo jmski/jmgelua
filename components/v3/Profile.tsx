@@ -23,15 +23,15 @@ const Profile = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="text-slate-500 flex flex-col gap-4 text-xs mobile:text-base xs:text-lg">
-          <div className="h-64 overflow-auto scrollbar pr-12 flex flex-col gap-4">
-            <p className="hover:text-slate-300 ease-in-out duration-200">
+        <div className="text-slate-300 flex flex-col gap-4 text-xs mobile:text-base xs:text-lg">
+          <div className="h-64 bg-slate-500/25 rounded-md overflow-auto scrollbar p-6 flex flex-col gap-4">
+            <p>
               Hello! My name is Jon and I enjoy making things come to{" "}
               <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
                 life on the internet.
               </span>
             </p>
-            <p className="hover:text-slate-300 ease-in-out duration-200">
+            <p>
               My coding journey started back in 2000 when I had the idea to
               build an online profile for myself in order to impress a girl—{" "}
               <span className="italic">
@@ -41,11 +41,11 @@ const Profile = () => {
                 </span>
               </span>
             </p>
-            <p className="hover:text-slate-300 ease-in-out duration-200">
+            <p>
               Turns out that this would take me down the path to learn a lot
               about HTML and CSS!
             </p>
-            <p className="hover:text-slate-300 ease-in-out duration-200">
+            <p>
               Fast-forward to today, I&apos;m a{" "}
               <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
                 stay-at-home dad
@@ -55,14 +55,14 @@ const Profile = () => {
               </span>{" "}
               as a freelance developer.
             </p>
-            <p className="hover:text-slate-300 ease-in-out duration-200">
+            <p>
               My goal right now is to find opportunities where I can challenge
               myself to learn and develop new skills, as well as build
               accessible, inclusive products and digital experiences for my
               clients.
             </p>
           </div>
-          <p className="text-slate-300 ease-in-out duration-200">
+          <p className="px-6">
             I recently started working on a passion project called{" "}
             <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
               <a
@@ -75,10 +75,10 @@ const Profile = () => {
             </span>{" "}
             come check it out!
           </p>
-          <span className="text-slate-300 ease-in-out duration-200">
+          <span className="px-6">
             Here are a few technologies I&apos;ve been working with recently:
           </span>
-          <ul className="grid grid-cols-2 gap-4">
+          <ul className="grid grid-cols-2 gap-4 px-6">
             {techList.map((tech, index) => (
               <li key={index} className="flex items-center gap-4">
                 <IoTriangleOutline color="#14b8a6" size="10" />

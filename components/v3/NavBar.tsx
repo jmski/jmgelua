@@ -6,19 +6,19 @@ const NavBar = () => {
   const navLinks = [
     {
       title: "About",
-      href: "#about",
+      href: "/#about",
     },
     {
       title: "Feature",
-      href: "#feature",
+      href: "/#feature",
     },
     {
       title: "Work",
-      href: "#work",
+      href: "/#work",
     },
     {
       title: "Contact",
-      href: "#contact",
+      href: "/#contact",
     },
   ];
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,11 +38,11 @@ const NavBar = () => {
           <ol className="flex justify-between items-center gap-12 list-decimal text-teal-500">
             {navLinks.map((element, index) => (
               <li key={index}>
-                <a href={element.href}>
-                  <span className="text-slate-300 hover:text-pink-500 ease-in-out duration-200 hover-underline-animation">
+                <Link href={element.href}>
+                  <a className="text-slate-300 hover:text-pink-500 ease-in-out duration-200 hover-underline-animation">
                     {element.title}
-                  </span>
-                </a>
+                  </a>
+                </Link>
               </li>
             ))}
           </ol>
@@ -81,11 +81,11 @@ const NavBar = () => {
               <ol className="flex flex-col items-end gap-12 list-decimal text-teal-500 mb-12">
                 {navLinks.map((element, index) => (
                   <li key={index}>
-                    <a href={element.href}>
-                      <span className="text-slate-300 hover:text-pink-500 ease-in-out duration-200">
+                    <Link href={element.href}>
+                      <a className="text-slate-300 hover:text-pink-500 ease-in-out duration-200 hover-underline-animation">
                         {element.title}
-                      </span>
-                    </a>
+                      </a>
+                    </Link>
                   </li>
                 ))}
               </ol>

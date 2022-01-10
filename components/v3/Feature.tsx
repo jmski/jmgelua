@@ -26,7 +26,7 @@ const Feature = () => {
                   Featured Project
                 </span>
 
-                <h3 className="text-slate-300 font-bold group-hover:text-pink-500 ease-in-out duration-200 text-xl mobile:text-2xl md:mb-5">
+                <h3 className="text-slate-300 font-bold group-hover:text-teal-500 ease-in-out duration-200 text-xl mobile:text-2xl md:mb-5">
                   <a
                     href={feature.preview}
                     target={"_blank"}
