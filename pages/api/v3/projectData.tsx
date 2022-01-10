@@ -19,6 +19,14 @@ export const projectData: ProjectDataProps[] = [
     techs: ["stuff", "hot", "boy"],
   },
   {
+    title: "Portfolio V2",
+    dateStart: "Dec 18, 2021",
+    img: "/images/pitchbox2.png",
+    href: "http://jmgelua.ca/v2",
+    github: "https://github.com/jmski/jmgelua/tree/main/components/v2",
+    desc: "Took the opportunity to redo my portfolio website after learning so much about TailwindCSS and Next.js.",
+  },
+  {
     title: "PitchBox Page 2.0",
     dateStart: "Dec 8, 2021",
     img: "/images/pitchbox2.png",
@@ -58,5 +66,13 @@ export const projectData: ProjectDataProps[] = [
     href: "http://startupfuel-pitchbox.netlify.app",
     github: "https://github.com/jmski/startupfuel-pitchbox.git",
     desc: "Created a professional landing page with responsive design and animations. The website was made using styled-components, webgl and react.",
+  },
+  {
+    title: "Portfolio V1",
+    dateStart: "April 1, 2021",
+    img: "/images/pitchbox.png",
+    href: "https://jmgelua.ca/v1",
+    github: "https://github.com/jmski/jmgelua/tree/main/components/v1",
+    desc: "Created my first portfolio and website using TailwindCSS and Next.js.",
   },
 ];

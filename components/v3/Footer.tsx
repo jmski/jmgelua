@@ -16,7 +16,7 @@ const Footer = () => (
             mind?
           </span>
           <br />
-          <span className="font-sans text-teal-500 text-2xl mobile:text-5xl hover-underline-animation cursor-pointer">
+          <span className="font-sans text-teal-500 text-2xl mobile:text-5xl cursor-pointer">
             <a>Let's work together</a>
           </span>
         </h1>

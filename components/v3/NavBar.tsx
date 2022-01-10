@@ -46,12 +46,18 @@ const NavBar = () => {
               </li>
             ))}
           </ol>
-          <button
-            className="text-teal-500 font-medium hover:text-slate-300 ease-in-out duration-200 py-2 px-4 ml-12 rounded-md leading-6 border-2 border-teal-500 hover:border-slate-300 outline-0"
-            type="button"
+          <a
+            href={"/JonMichaelGeluaResume2022.pdf"}
+            target={"_blank"}
+            rel={"noreferrer"}
           >
-            Resume
-          </button>
+            <button
+              className="text-teal-500 font-medium hover:text-slate-300 ease-in-out duration-200 py-2 px-4 ml-12 rounded-md leading-6 border-2 border-teal-500 hover:border-slate-300 outline-0"
+              type="button"
+            >
+              Resume
+            </button>
+          </a>
         </div>
         {/** Mobile Menu */}
         <div className="md:hidden ml-4 relative">
@@ -73,12 +79,18 @@ const NavBar = () => {
                   </li>
                 ))}
               </ol>
-              <button
-                className="font-medium text-teal-500 hover:text-slate-300 ease-in-out duration-200 py-2 px-4 ml-12 rounded-md leading-6 border-2 border-teal-500 hover:border-slate-300 outline-0"
-                type="button"
+              <a
+                href={"/JonMichaelGeluaResume2022.pdf"}
+                target={"_blank"}
+                rel={"noreferrer"}
               >
-                Resume
-              </button>
+                <button
+                  className="font-medium text-teal-500 hover:text-slate-300 ease-in-out duration-200 py-2 px-4 ml-12 rounded-md leading-6 border-2 border-teal-500 hover:border-slate-300 outline-0"
+                  type="button"
+                >
+                  Resume
+                </button>
+              </a>
             </div>
           )}
         </div>
