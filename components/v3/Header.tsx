@@ -22,9 +22,9 @@ const Header = () => {
           </span>
           <div className="lg:w-1/2">
             <span className="text-slate-500 hover:text-slate-300 ease-in-out duration-200 font-mono text-xs mobile:text-base xs:text-lg">
-              I&apos;m a freelance web engineer specializing in building (and
-              occasionally designing) awesome digital experiences. Currently,
-              I&apos;m focused on building an idle role playing game called{" "}
+              I&apos;m a web engineer specializing in building (and occasionally
+              designing) awesome digital experiences. Currently, I&apos;m
+              focused on building a project called{" "}
               <span className="text-teal-500 hover:text-pink-500 hover-underline-animation">
                 <a
                   href={"https://fatherhoodfrenzy.com"}
