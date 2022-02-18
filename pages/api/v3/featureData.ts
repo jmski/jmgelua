@@ -9,9 +9,9 @@ const featureData = [
   },
   {
     title: "Fatherhood Frenzy",
-    desc: "An idle clicker Role Playing Game about the struggles and benefits of being a father. This online collection of mini games demonstrates my technical skills and digital experience management",
+    desc: "A personal blog about parenting, the struggles of being a stay-at-home dad and working from home as a freelance.",
     src: "/images/fatherhoodfrenzy.png",
-    tech: ["TailwindCSS", "React", "Styled-components", "Next.js"],
+    tech: ["TailwindCSS", "React", "Sass", "GraphQL"],
     github: "https://github.com/jmski/fatherhood-frenzy.git",
     preview: "https://fatherhoodfrenzy.com",
   },
